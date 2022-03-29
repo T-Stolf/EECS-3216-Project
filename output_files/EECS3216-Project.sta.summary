@@ -2,112 +2,76 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'ip1|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -4.755
-TNS   : -56.012
+Type  : Slow 1200mV 85C Model Setup 'ClockDivider:MHz25|cout'
+Slack : -2.217
+TNS   : -83.551
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -1.428
-TNS   : -1.428
-
-Type  : Slow 1200mV 85C Model Setup 'ClockDivider:halfSec|cout'
-Slack : -0.094
-TNS   : -0.259
-
-Type  : Slow 1200mV 85C Model Hold 'ClockDivider:halfSec|cout'
-Slack : 0.374
-TNS   : 0.000
+Slack : -0.349
+TNS   : -0.349
 
 Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : 0.552
+Slack : 0.356
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'ip1|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.646
+Type  : Slow 1200mV 85C Model Hold 'ClockDivider:MHz25|cout'
+Slack : 0.391
 TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ClockDivider:halfSec|cout'
-Slack : -1.222
-TNS   : -24.440
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.573
-TNS   : 0.000
+Slack : -3.000
+TNS   : -4.222
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ip1|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 19.758
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ClockDivider:MHz25|cout'
+Slack : -1.222
+TNS   : -50.102
 
-Type  : Slow 1200mV 0C Model Setup 'ip1|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -3.780
-TNS   : -44.380
+Type  : Slow 1200mV 0C Model Setup 'ClockDivider:MHz25|cout'
+Slack : -1.948
+TNS   : -73.146
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -1.209
-TNS   : -1.209
-
-Type  : Slow 1200mV 0C Model Setup 'ClockDivider:halfSec|cout'
-Slack : 0.001
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'ClockDivider:halfSec|cout'
-Slack : 0.346
-TNS   : 0.000
+Slack : -0.190
+TNS   : -0.190
 
 Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.507
+Slack : 0.228
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'ip1|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.559
+Type  : Slow 1200mV 0C Model Hold 'ClockDivider:MHz25|cout'
+Slack : 0.353
 TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ClockDivider:halfSec|cout'
-Slack : -1.222
-TNS   : -24.440
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.586
-TNS   : 0.000
+Slack : -3.000
+TNS   : -4.222
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ip1|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 19.715
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ClockDivider:MHz25|cout'
+Slack : -1.222
+TNS   : -50.102
 
-Type  : Fast 1200mV 0C Model Setup 'ip1|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -1.794
-TNS   : -21.217
+Type  : Fast 1200mV 0C Model Setup 'ClockDivider:MHz25|cout'
+Slack : -0.506
+TNS   : -17.380
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -0.601
-TNS   : -0.601
+Slack : -0.048
+TNS   : -0.048
 
-Type  : Fast 1200mV 0C Model Setup 'ClockDivider:halfSec|cout'
-Slack : 0.487
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'ClockDivider:halfSec|cout'
-Slack : 0.165
+Type  : Fast 1200mV 0C Model Hold 'ClockDivider:MHz25|cout'
+Slack : 0.183
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.249
+Slack : 0.297
 TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'ip1|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.307
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ClockDivider:halfSec|cout'
-Slack : -1.000
-TNS   : -20.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.329
-TNS   : 0.000
+Slack : -3.000
+TNS   : -4.233
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ip1|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 19.773
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ClockDivider:MHz25|cout'
+Slack : -1.000
+TNS   : -41.000
 
 ------------------------------------------------------------

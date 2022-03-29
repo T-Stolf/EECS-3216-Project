@@ -1,4 +1,4 @@
-module ClockDivider(input logic cin, output logic cout);
+module ClockDivider #(parameter D = 32'd12500000) (input logic cin, output logic cout);
 
 // Based on code from fpga4student.com
 // cin is the input clock; if from the DE10-Lite,
@@ -10,7 +10,7 @@ module ClockDivider(input logic cin, output logic cout);
 
 logic[31:0] count = 32'd0;
 //parameter D = 32'd50000000;
-parameter D = 32'd12500000;
+//parameter D = 32'd12500000;
 
 always_ff@(posedge cin) begin
 	

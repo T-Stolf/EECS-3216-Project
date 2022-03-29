@@ -6,13 +6,7 @@ module top(input CLOCK_50, input[0:3] SW ,output VGA_HS, VGA_VS, output[0:3] VGA
 wire clk25MHz, halfSecondclk, enableVertCount, validArea ;
 wire [15:0] verticalCount, horizontalCount;
 
-reg reset = 0;
-	ip ip1(
-		.areset(reset),
-		.inclk0(CLOCK_50),
-		.c0(clk25MHz),
-		.locked()
-		);
+ClockDivider #(.D(32'd1)) MHz25 (CLOCK_50, clk25MHz);
 		
 ClockDivider halfSec(CLOCK_50, halfSecondclk);
 		
