@@ -1,0 +1,25 @@
+`timescale 1ns/1ps
+ 
+module top(input clk, output HSync, output VSync, output[3:0] R,G,B);
+
+
+wire clk25MHz, enableVertCount ;
+wire [15:0] verticalCount, horizontalCount;
+
+clock_divider VGA_Clock_Gen(clk, clk25MHz);
+horizontalClock VGAHoriz (clk25MHz, enableVertCount, horizontalCount);
+verticalClock VGAVert (clk25MHz, enableVertCount, verticalCount);
+
+//outputs
+//based on VGA standards
+//https://www.youtube.com/watch?v=4enWoVHCykI
+assign Hsync = (horizontalCount < 96) ? 1'b1:1'b0;
+assign VSync = (verticalCount < 2) ? 1'b1:1'b0;
+
+//colours
+assign R = (horizontalCount < 784 && horizontalCount > 143 && verticalCount < 515 && verticalCount > 35) ? 4'hF:4'h0;
+assign G = (horizontalCount < 784 && horizontalCount > 143 && verticalCount < 515 && verticalCount > 35) ? 4'hF:4'h0;
+assign B = (horizontalCount < 784 && horizontalCount > 143 && verticalCount < 515 && verticalCount > 35) ? 4'hF:4'h0;
+
+
+endmodule

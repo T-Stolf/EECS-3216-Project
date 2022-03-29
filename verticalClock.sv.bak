@@ -1,0 +1,18 @@
+`timescale 1ns/1ps
+ 
+module verticalClock(input clk25MHz, input enableVertCount=0, output reg [15:0] verticalCount=0);
+	always@(posedge clk25MHz)
+	begin
+		if (horizontalCount < 525 && enableVertCounter == 1'b1) 
+		begin
+			verticalCount <= verticalCount+1;
+		end
+		else
+		begin
+			verticalCount <= 0;//reset horizontal counter
+		end
+	
+	
+	end
+
+endmodule

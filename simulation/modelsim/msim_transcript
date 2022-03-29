@@ -1,0 +1,181 @@
+# Reading pref.tcl
+# do EECS3216-Project_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/Winter\ 2022/EECS3216\ Z\ -\ Digital\ Systems\ Engineering/Project/EECS-3216-Project/db {D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/db/ip_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:38:50 on Mar 28,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/db" D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/db/ip_altpll.v 
+# -- Compiling module ip_altpll
+# 
+# Top level modules:
+# 	ip_altpll
+# End time: 20:38:50 on Mar 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Winter\ 2022/EECS3216\ Z\ -\ Digital\ Systems\ Engineering/Project/EECS-3216-Project {D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/ClockDivider.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:38:50 on Mar 28,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project" D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/ClockDivider.sv 
+# -- Compiling module ClockDivider
+# 
+# Top level modules:
+# 	ClockDivider
+# End time: 20:38:50 on Mar 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Winter\ 2022/EECS3216\ Z\ -\ Digital\ Systems\ Engineering/Project/EECS-3216-Project {D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/ip.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:38:51 on Mar 28,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project" D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/ip.sv 
+# -- Compiling module ip
+# 
+# Top level modules:
+# 	ip
+# End time: 20:38:51 on Mar 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Winter\ 2022/EECS3216\ Z\ -\ Digital\ Systems\ Engineering/Project/EECS-3216-Project {D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/verticalClock.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:38:51 on Mar 28,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project" D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/verticalClock.sv 
+# -- Compiling module verticalClock
+# 
+# Top level modules:
+# 	verticalClock
+# End time: 20:38:51 on Mar 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Winter\ 2022/EECS3216\ Z\ -\ Digital\ Systems\ Engineering/Project/EECS-3216-Project {D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/horizontalClock.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:38:51 on Mar 28,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project" D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/horizontalClock.sv 
+# -- Compiling module horizontalClock
+# 
+# Top level modules:
+# 	horizontalClock
+# End time: 20:38:51 on Mar 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Winter\ 2022/EECS3216\ Z\ -\ Digital\ Systems\ Engineering/Project/EECS-3216-Project {D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:38:51 on Mar 28,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project" D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/top.sv 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 20:38:51 on Mar 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Winter\ 2022/EECS3216\ Z\ -\ Digital\ Systems\ Engineering/Project/EECS-3216-Project {D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:38:51 on Mar 28,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project" D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv 
+# -- Compiling module drawLines
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(19): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(19): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(19): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(21): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(21): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(21): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(23): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(23): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(23): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(25): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(25): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(25): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(28): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(28): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(28): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(30): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(30): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(30): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(32): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(32): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(32): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(34): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(34): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(34): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(37): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(37): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(37): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(39): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(39): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(39): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(41): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(41): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(41): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(43): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(43): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(43): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(46): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(46): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(46): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(48): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(48): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(48): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(50): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(50): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(50): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(52): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(52): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(52): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(55): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(55): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(55): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(57): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(57): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(57): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(59): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(59): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(59): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(61): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(61): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(61): (vlog-2110) Illegal reference to net "R".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(66): (vlog-2110) Illegal reference to net "B".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(66): (vlog-2110) Illegal reference to net "G".
+# ** Error: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv(66): (vlog-2110) Illegal reference to net "R".
+# End time: 20:38:51 on Mar 28,2022, Elapsed time: 0:00:00
+# Errors: 63, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./EECS3216-Project_run_msim_rtl_verilog.do line 14
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+D:/Winter\ 2022/EECS3216\ Z\ -\ Digital\ Systems\ Engineering/Project/EECS-3216-Project {D:/Winter 2022/EECS3216 Z - Digit..."
+vlog -reportprogress 300 -work work {D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:38:59 on Mar 28,2022
+# vlog -reportprogress 300 -work work D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/tb.sv 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 20:38:59 on Mar 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb
+# vsim work.tb 
+# Start time: 20:39:06 on Mar 28,2022
+# Loading sv_std.std
+# Loading work.tb
+add wave -position insertpoint  \
+sim:/tb/vertMin \
+sim:/tb/vertMax \
+sim:/tb/horzMin \
+sim:/tb/horzMax \
+sim:/tb/rows \
+sim:/tb/columns \
+sim:/tb/vertInc \
+sim:/tb/horzInc
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Thomas  Hostname: DESKTOP-EGOM0UP  ProcessID: 7952
+#           Attempting to use alternate WLF file "./wlft1nz2w8".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft1nz2w8
+run
+# 0000000000100100, 0000000010000000
+run
+# End time: 20:42:58 on Mar 28,2022, Elapsed time: 0:03:52
+# Errors: 0, Warnings: 2
