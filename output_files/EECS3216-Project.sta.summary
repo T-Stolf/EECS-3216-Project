@@ -3,19 +3,19 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'ClockDivider:MHz25|cout'
-Slack : -2.217
-TNS   : -83.551
+Slack : -3.715
+TNS   : -131.132
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -0.349
-TNS   : -0.349
-
-Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : 0.356
-TNS   : 0.000
+Slack : -0.646
+TNS   : -0.646
 
 Type  : Slow 1200mV 85C Model Hold 'ClockDivider:MHz25|cout'
-Slack : 0.391
+Slack : 0.547
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.581
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
@@ -24,22 +24,22 @@ TNS   : -4.222
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ClockDivider:MHz25|cout'
 Slack : -1.222
-TNS   : -50.102
+TNS   : -54.990
 
 Type  : Slow 1200mV 0C Model Setup 'ClockDivider:MHz25|cout'
-Slack : -1.948
-TNS   : -73.146
+Slack : -3.327
+TNS   : -116.788
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -0.190
-TNS   : -0.190
+Slack : -0.527
+TNS   : -0.527
 
 Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.228
+Slack : 0.481
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'ClockDivider:MHz25|cout'
-Slack : 0.353
+Slack : 0.502
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
@@ -48,30 +48,30 @@ TNS   : -4.222
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ClockDivider:MHz25|cout'
 Slack : -1.222
-TNS   : -50.102
+TNS   : -54.990
 
 Type  : Fast 1200mV 0C Model Setup 'ClockDivider:MHz25|cout'
-Slack : -0.506
-TNS   : -17.380
+Slack : -1.198
+TNS   : -37.282
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -0.048
-TNS   : -0.048
+Slack : -0.100
+TNS   : -0.100
 
 Type  : Fast 1200mV 0C Model Hold 'ClockDivider:MHz25|cout'
-Slack : 0.183
+Slack : 0.247
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.297
+Slack : 0.305
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -4.233
+TNS   : -4.144
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ClockDivider:MHz25|cout'
 Slack : -1.000
-TNS   : -41.000
+TNS   : -45.000
 
 ------------------------------------------------------------

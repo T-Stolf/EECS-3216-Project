@@ -1,37 +1,78 @@
+module drawLines(input[0:3][0:2] colourRegion, input refreshclk, areaValid, input[15:0] horizontal, vertical, output logic [0:3] R, G, B);
 
+logic[11:0] white = 12'hFFF, black = 12'h0, blue = 12'h00F, red = 12'hF00, green = 12'h0F0, yellow = 12'hFF0, purple = 12'hF0F;
 
-module drawLines(input[0:3] slice, input refreshclk, updateclk, areaValid, input[15:0] horizontal, vertical, output logic [0:3] R, G, B);
+parameter[15:0] vertMin = 35, vertMax = 514, horzMin = 143, horzMax = 783, rows = 13, columns = 50; 
 
-logic[11:0] white = 12'hFFF, black = 12'h0, blue = 12'h00F, red = 12'hF00, green = 12'h0F0, yellow = 12'hFF0, RGB;
-
-parameter[15:0] vertMin = 35, vertMax = 514, horzMin = 143, horzMax = 783, rows = 13, columns = 50;
-logic[15:0] vertInc, horzInc, j, k;
-
-assign vertInc = (vertMax - vertMin) / rows;
-assign horzInc = (horzMax - horzMin) / columns;
-
-logic[0:columns-1][0:rows-1] area; //[0:4][0:3] area;
-
-integer i, l;
+//logic[0:3][0:2] colourRegion = {3'b000, 3'b100, 3'b011, 3'b000};
 
 always_ff@(posedge refreshclk)
 begin
 	if(areaValid)
 	begin
-		
-		for(j = 0; j < rows; j = j + 1)
-		begin
-			for(k = 0; k < columns; k = k + 1)
-			begin
-			if(/*(area[0][0] || area[0][1] || area[0][2] || area[0][3])*/  area[k][j] == 1 && vertical >= (35 + vertInc) && vertical <= 514 && horizontal >= (143 + horzInc) && horizontal <= 783)
-				RGB <= white;
-			else if(area[k][j] == 0 && vertical >= (35 + vertInc) && vertical <= 514 && horizontal >= (143 + horzInc) && horizontal <= 783)
-				RGB <= red;
-			else
-				RGB <= yellow;
-			end
+		if((vertical > 34 && vertical < 273) && (horizontal > 143 && horizontal < 463))
+			case(colourRegion[0])
+//				4'b0000: {R, G, B} <= red;
+//				4'b0001: {R, G, B} <= red;
+//				
+//				4'b0010: {R, G, B} <= green;
+//				4'b0011: {R, G, B} <= green;
+//				
+//				4'b0100: {R, G, B} <= blue;
+//				4'b0101: {R, G, B} <= blue;
+//				
+//				4'b0110: {R, G, B} <= purple;
+//				4'b0111: {R, G, B} <= purple;
+//				
+//				4'b1000: {R, G, B} <= yellow;
+//				4'b1001: {R, G, B} <= yellow;
+				
+				3'b000: {R, G, B} <= red;
+				3'b001: {R, G, B} <= green;
+				3'b010: {R, G, B} <= blue;
+				3'b011: {R, G, B} <= purple;
+				3'b100: {R, G, B} <= yellow;
+				
+				default: {R, G, B} <= white;
+			endcase
+		else if((vertical > 34 && vertical < 273) && (horizontal > 464 && horizontal < 783))
+			case(colourRegion[1])
+			
+				3'b000: {R, G, B} <= red;
+				3'b001: {R, G, B} <= green;
+				3'b010: {R, G, B} <= blue;
+				3'b011: {R, G, B} <= purple;
+				3'b100: {R, G, B} <= yellow;
+				
+				default: {R, G, B} <= white;
+			endcase
+		else if((vertical > 274 && vertical < 515) && (horizontal > 143 && horizontal < 463))
+			case(colourRegion[2])
+			
+				3'b000: {R, G, B} <= red;
+				3'b001: {R, G, B} <= green;
+				3'b010: {R, G, B} <= blue;
+				3'b011: {R, G, B} <= purple;
+				3'b100: {R, G, B} <= yellow;
+				
+				default: {R, G, B} <= white;
+			endcase
+		else if((vertical > 274 && vertical < 515) && (horizontal > 464 && horizontal < 783))
+			case(colourRegion[3])
+			
+ 				3'b000: {R, G, B} <= red;
+				3'b001: {R, G, B} <= green;
+				3'b010: {R, G, B} <= blue;
+				3'b011: {R, G, B} <= purple;
+				3'b100: {R, G, B} <= yellow;
+				
+				default: {R, G, B} <= white;
+			endcase
+		else
+			{R, G, B} <= black;
+
 		end
-	end
+
 //		
 //		else
 //			{R, G, B} <= black;
@@ -185,48 +226,39 @@ begin
 //		else if(area[9][3] && (vertical > 394 && vertical < 515) && (horizontal > 720 && horizontal < 783))
 //			{R, G, B} <= white;	
 		
-
-		
 		else
-			RGB <= black;
+			{R, G, B} <= black;
 end
 
 
 
 
-always_ff@(posedge updateclk)
-begin
-	for(i = 0; i < rows; i = i + 1)
-		begin
-			if(i <= 3)
-				area[0][i] <= slice[i];
-			else
-				area[0][i] <= 0;
-			
-			for(l = 1; l < columns; l = l + 1)
-			begin
-				area[l][i] <= area[l-1][i];
-			end
-		end
-//	area[0][0] <= slice[0];
-//	area[0][1] <= slice[1];
-//	area[0][2] <= slice[2];
-//	area[0][3] <= slice[3];
-//	for(i = 1; i < 5; i = i + 1)
-//	begin
-//		area[i][0] <= area[i-1][0];
-//		area[i][1] <= area[i-1][1];
-//		area[i][2] <= area[i-1][2];
-//		area[i][3] <= area[i-1][3];
-//	end
-end
+//always_ff@(posedge updateclk)
+//begin
+//	for(i = 0; i < rows; i = i + 1)
+//		begin
+//			if(i <= 3)
+//				area[0][i] <= slice[i];
+//			else
+//				area[0][i] <= 0;
+//			
+//			for(l = 1; l < columns; l = l + 1)
+//			begin
+//				area[l][i] <= area[l-1][i];
+//			end
+//		end
+////	area[0][0] <= slice[0];
+////	area[0][1] <= slice[1];
+////	area[0][2] <= slice[2];
+////	area[0][3] <= slice[3];
+////	for(i = 1; i < 5; i = i + 1)
+////	begin
+////		area[i][0] <= area[i-1][0];
+////		area[i][1] <= area[i-1][1];
+////		area[i][2] <= area[i-1][2];
+////		area[i][3] <= area[i-1][3];
+////	end
+//end
 
-
-always_comb
-begin
-	R[0:3] <= RGB[11:8];
-	G[0:3] <= RGB[7:4];
-	B[0:3] <= RGB[3:0];
-end
 
 endmodule

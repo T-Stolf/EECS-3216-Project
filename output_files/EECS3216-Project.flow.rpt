@@ -1,5 +1,5 @@
 Flow report for EECS3216-Project
-Tue Mar 29 13:41:01 2022
+Sat Apr 02 10:05:36 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------+
 ; Flow Summary                                                                                   ;
 +------------------------------------+-----------------------------------------------------------+
-; Flow Status                        ; Successful - Tue Mar 29 13:41:01 2022                     ;
+; Flow Status                        ; Successful - Sat Apr 02 10:05:33 2022                     ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
 ; Revision Name                      ; EECS3216-Project                                          ;
-; Top-level Entity Name              ; top                                                       ;
+; Top-level Entity Name              ; Show_Colours                                              ;
 ; Family                             ; MAX 10                                                    ;
 ; Device                             ; 10M50DAF484C6GES                                          ;
 ; Timing Models                      ; Preliminary                                               ;
-; Total logic elements               ; 79 / 49,760 ( < 1 % )                                     ;
-;     Total combinational functions  ; 69 / 49,760 ( < 1 % )                                     ;
-;     Dedicated logic registers      ; 42 / 49,760 ( < 1 % )                                     ;
-; Total registers                    ; 42                                                        ;
-; Total pins                         ; 19 / 360 ( 5 % )                                          ;
+; Total logic elements               ; 108 / 49,760 ( < 1 % )                                    ;
+;     Total combinational functions  ; 102 / 49,760 ( < 1 % )                                    ;
+;     Dedicated logic registers      ; 46 / 49,760 ( < 1 % )                                     ;
+; Total registers                    ; 46                                                        ;
+; Total pins                         ; 35 / 360 ( 10 % )                                         ;
 ; Total virtual pins                 ; 0                                                         ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                                     ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                                           ;
@@ -67,30 +67,30 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/29/2022 13:40:36 ;
+; Start date & time ; 04/02/2022 10:05:13 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; EECS3216-Project    ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                               ;
-+-------------------------------------+----------------------------------------+------------------+-------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value    ; Entity Name ; Section Id     ;
-+-------------------------------------+----------------------------------------+------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 114374074698718.164857563604856        ; --               ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --               ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>           ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --               ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --               ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --               ; top         ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --               ; top         ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --               ; top         ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --               ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --               ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --               ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; top                                    ; EECS3216-Project ; --          ; --             ;
-+-------------------------------------+----------------------------------------+------------------+-------------+----------------+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                ;
++-------------------------------------+----------------------------------------+------------------+--------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value    ; Entity Name  ; Section Id     ;
++-------------------------------------+----------------------------------------+------------------+--------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 114374074698718.164890831301068        ; --               ; --           ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --               ; --           ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>           ; --           ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --               ; --           ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --               ; --           ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --               ; Show_Colours ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --               ; Show_Colours ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --               ; Show_Colours ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --               ; --           ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --               ; --           ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --               ; --           ; --             ;
+; TOP_LEVEL_ENTITY                    ; Show_Colours                           ; EECS3216-Project ; --           ; --             ;
++-------------------------------------+----------------------------------------+------------------+--------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -98,12 +98,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4817 MB             ; 00:00:16                           ;
-; Fitter               ; 00:00:08     ; 1.1                     ; 6220 MB             ; 00:00:13                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4690 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4917 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4649 MB             ; 00:00:01                           ;
-; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:35                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4818 MB             ; 00:00:15                           ;
+; Fitter               ; 00:00:08     ; 1.1                     ; 6225 MB             ; 00:00:14                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4689 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4914 MB             ; 00:00:02                           ;
+; Total                ; 00:00:20     ; --                      ; --                  ; 00:00:34                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,7 +115,6 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; DESKTOP-EGOM0UP  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; DESKTOP-EGOM0UP  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; DESKTOP-EGOM0UP  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-EGOM0UP  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -127,7 +125,6 @@ quartus_map --read_settings_files=on --write_settings_files=off EECS3216-Project
 quartus_fit --read_settings_files=off --write_settings_files=off EECS3216-Project -c EECS3216-Project
 quartus_asm --read_settings_files=off --write_settings_files=off EECS3216-Project -c EECS3216-Project
 quartus_sta EECS3216-Project -c EECS3216-Project
-quartus_eda --read_settings_files=off --write_settings_files=off EECS3216-Project -c EECS3216-Project
 
 
 
