@@ -295,13 +295,15 @@ cout <= cout~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top|scorer:Score
-GameOver => score[0].ENA
+GameOver => answer_out.OUTPUTSELECT
 GameOver => score[6].ENA
 GameOver => score[5].ENA
 GameOver => score[4].ENA
 GameOver => score[3].ENA
 GameOver => score[2].ENA
 GameOver => score[1].ENA
+GameOver => score[0].ENA
+clk => answer_out.CLK
 clk => score[0].CLK
 clk => score[1].CLK
 clk => score[2].CLK
@@ -316,7 +318,10 @@ rst => score[3].ACLR
 rst => score[4].ACLR
 rst => score[5].ACLR
 rst => score[6].ACLR
+rst => answer_out.ENA
+answer => LessThan0.IN1
 answer => always0.IN1
+answer => answer_out.DATAB
 HEX5[0] <= sevenseg:A.port1
 HEX5[1] <= sevenseg:A.port1
 HEX5[2] <= sevenseg:A.port1

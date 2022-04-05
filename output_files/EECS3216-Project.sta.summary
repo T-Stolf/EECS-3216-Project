@@ -3,48 +3,48 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -4.821
-TNS   : -164.024
-
-Type  : Slow 1200mV 85C Model Setup 'KEY[1]'
-Slack : -3.640
-TNS   : -3.640
+Slack : -4.799
+TNS   : -184.091
 
 Type  : Slow 1200mV 85C Model Setup 'Show_Colours:VGA|ClockDivider:MHz25|cout'
-Slack : -3.625
-TNS   : -132.274
+Slack : -4.072
+TNS   : -135.251
+
+Type  : Slow 1200mV 85C Model Setup 'KEY[1]'
+Slack : -3.557
+TNS   : -3.557
 
 Type  : Slow 1200mV 85C Model Setup 'timer:Time|ClockDivider:comb_5|cout'
-Slack : -1.116
-TNS   : -8.360
-
-Type  : Slow 1200mV 85C Model Hold 'timer:Time|ClockDivider:comb_5|cout'
-Slack : 0.315
-TNS   : 0.000
+Slack : -0.944
+TNS   : -9.549
 
 Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : 0.331
+Slack : 0.326
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'timer:Time|ClockDivider:comb_5|cout'
+Slack : 0.330
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'Show_Colours:VGA|ClockDivider:MHz25|cout'
-Slack : 0.554
+Slack : 0.549
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'KEY[1]'
-Slack : 1.039
+Slack : 1.052
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'CLOCK_50'
-Slack : -2.115
-TNS   : -2.115
+Slack : -2.021
+TNS   : -2.021
 
 Type  : Slow 1200mV 85C Model Removal 'CLOCK_50'
-Slack : 1.794
+Slack : 1.537
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -73.876
+TNS   : -75.098
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'KEY[1]'
 Slack : -3.000
@@ -59,48 +59,48 @@ Slack : -1.222
 TNS   : -13.442
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -4.331
-TNS   : -145.938
-
-Type  : Slow 1200mV 0C Model Setup 'KEY[1]'
-Slack : -3.291
-TNS   : -3.291
+Slack : -4.248
+TNS   : -163.561
 
 Type  : Slow 1200mV 0C Model Setup 'Show_Colours:VGA|ClockDivider:MHz25|cout'
-Slack : -3.227
-TNS   : -117.392
+Slack : -3.631
+TNS   : -119.648
+
+Type  : Slow 1200mV 0C Model Setup 'KEY[1]'
+Slack : -3.098
+TNS   : -3.098
 
 Type  : Slow 1200mV 0C Model Setup 'timer:Time|ClockDivider:comb_5|cout'
-Slack : -0.932
-TNS   : -6.651
-
-Type  : Slow 1200mV 0C Model Hold 'timer:Time|ClockDivider:comb_5|cout'
-Slack : 0.286
-TNS   : 0.000
+Slack : -0.773
+TNS   : -7.793
 
 Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.301
+Slack : 0.296
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'timer:Time|ClockDivider:comb_5|cout'
+Slack : 0.300
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'Show_Colours:VGA|ClockDivider:MHz25|cout'
-Slack : 0.508
+Slack : 0.504
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'KEY[1]'
-Slack : 0.970
+Slack : 0.968
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'CLOCK_50'
-Slack : -1.876
-TNS   : -1.876
+Slack : -1.799
+TNS   : -1.799
 
 Type  : Slow 1200mV 0C Model Removal 'CLOCK_50'
-Slack : 1.730
+Slack : 1.506
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -73.876
+TNS   : -75.098
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'KEY[1]'
 Slack : -3.000
@@ -114,53 +114,53 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'timer:Time|ClockDivider:comb_5
 Slack : -1.222
 TNS   : -13.442
 
-Type  : Fast 1200mV 0C Model Setup 'KEY[1]'
-Slack : -1.982
-TNS   : -1.982
-
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -1.794
-TNS   : -49.009
+Slack : -1.865
+TNS   : -58.530
 
 Type  : Fast 1200mV 0C Model Setup 'Show_Colours:VGA|ClockDivider:MHz25|cout'
-Slack : -1.167
-TNS   : -38.267
+Slack : -1.556
+TNS   : -41.512
+
+Type  : Fast 1200mV 0C Model Setup 'KEY[1]'
+Slack : -1.389
+TNS   : -1.389
 
 Type  : Fast 1200mV 0C Model Setup 'timer:Time|ClockDivider:comb_5|cout'
-Slack : -0.001
-TNS   : -0.001
-
-Type  : Fast 1200mV 0C Model Hold 'timer:Time|ClockDivider:comb_5|cout'
-Slack : 0.145
+Slack : 0.083
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.153
+Slack : 0.149
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'timer:Time|ClockDivider:comb_5|cout'
+Slack : 0.151
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'Show_Colours:VGA|ClockDivider:MHz25|cout'
-Slack : 0.250
+Slack : 0.247
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'KEY[1]'
-Slack : 0.475
+Slack : 0.479
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'CLOCK_50'
-Slack : -1.195
-TNS   : -1.195
+Slack : -1.150
+TNS   : -1.150
 
 Type  : Fast 1200mV 0C Model Removal 'CLOCK_50'
-Slack : 0.707
+Slack : 0.619
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -70.886
+TNS   : -72.044
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'KEY[1]'
 Slack : -3.000
-TNS   : -3.088
+TNS   : -3.072
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Show_Colours:VGA|ClockDivider:MHz25|cout'
 Slack : -1.000

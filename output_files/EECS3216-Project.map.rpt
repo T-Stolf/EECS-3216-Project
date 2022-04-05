@@ -1,5 +1,5 @@
 Analysis & Synthesis report for EECS3216-Project
-Mon Apr 04 23:18:38 2022
+Mon Apr 04 23:29:43 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -53,15 +53,15 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                                   ;
 +------------------------------------+-----------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 04 23:18:38 2022                     ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 04 23:29:43 2022                     ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
 ; Revision Name                      ; EECS3216-Project                                          ;
 ; Top-level Entity Name              ; top                                                       ;
 ; Family                             ; MAX 10                                                    ;
-; Total logic elements               ; 328                                                       ;
-;     Total combinational functions  ; 314                                                       ;
-;     Dedicated logic registers      ; 114                                                       ;
-; Total registers                    ; 114                                                       ;
+; Total logic elements               ; 331                                                       ;
+;     Total combinational functions  ; 317                                                       ;
+;     Dedicated logic registers      ; 115                                                       ;
+; Total registers                    ; 115                                                       ;
 ; Total pins                         ; 61                                                        ;
 ; Total virtual pins                 ; 0                                                         ;
 ; Total memory bits                  ; 0                                                         ;
@@ -211,20 +211,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 328            ;
+; Estimated Total logic elements              ; 331            ;
 ;                                             ;                ;
-; Total combinational functions               ; 314            ;
+; Total combinational functions               ; 317            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 107            ;
-;     -- 3 input functions                    ; 69             ;
+;     -- 4 input functions                    ; 108            ;
+;     -- 3 input functions                    ; 71             ;
 ;     -- <=2 input functions                  ; 138            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 218            ;
+;     -- normal mode                          ; 221            ;
 ;     -- arithmetic mode                      ; 96             ;
 ;                                             ;                ;
-; Total registers                             ; 114            ;
-;     -- Dedicated logic registers            ; 114            ;
+; Total registers                             ; 115            ;
+;     -- Dedicated logic registers            ; 115            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 61             ;
@@ -232,9 +232,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 58             ;
-; Total fan-out                               ; 1354           ;
-; Average fan-out                             ; 2.46           ;
+; Maximum fan-out                             ; 59             ;
+; Total fan-out                               ; 1366           ;
+; Average fan-out                             ; 2.47           ;
 +---------------------------------------------+----------------+
 
 
@@ -243,14 +243,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                               ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |top                                      ; 314 (0)             ; 114 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 61   ; 0            ; 0          ; |top                                                                                                              ; top                 ; work         ;
+; |top                                      ; 317 (0)             ; 115 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 61   ; 0            ; 0          ; |top                                                                                                              ; top                 ; work         ;
 ;    |Show_Colours:VGA|                     ; 88 (5)              ; 46 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|Show_Colours:VGA                                                                                             ; Show_Colours        ; work         ;
 ;       |ClockDivider:MHz25|                ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|Show_Colours:VGA|ClockDivider:MHz25                                                                          ; ClockDivider        ; work         ;
 ;       |drawLines:DL|                      ; 41 (41)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|Show_Colours:VGA|drawLines:DL                                                                                ; drawLines           ; work         ;
 ;       |horizontalCounter:VGAHoriz|        ; 20 (20)             ; 17 (17)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|Show_Colours:VGA|horizontalCounter:VGAHoriz                                                                  ; horizontalCounter   ; work         ;
 ;       |verticalCounter:VGAVert|           ; 21 (21)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|Show_Colours:VGA|verticalCounter:VGAVert                                                                     ; verticalCounter     ; work         ;
 ;    |random:Rand|                          ; 13 (13)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|random:Rand                                                                                                  ; random              ; work         ;
-;    |scorer:Score|                         ; 112 (9)             ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|scorer:Score                                                                                                 ; scorer              ; work         ;
+;    |scorer:Score|                         ; 115 (12)            ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|scorer:Score                                                                                                 ; scorer              ; work         ;
 ;       |lpm_divide:Div0|                   ; 43 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|scorer:Score|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
 ;          |lpm_divide_8sl:auto_generated|  ; 43 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|scorer:Score|lpm_divide:Div0|lpm_divide_8sl:auto_generated                                                   ; lpm_divide_8sl      ; work         ;
 ;             |sign_div_unsign_akh:divider| ; 43 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|scorer:Score|lpm_divide:Div0|lpm_divide_8sl:auto_generated|sign_div_unsign_akh:divider                       ; sign_div_unsign_akh ; work         ;
@@ -290,7 +290,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 114   ;
+; Total registers                              ; 115   ;
 ; Number of registers using Synchronous Clear  ; 64    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 31    ;
@@ -427,26 +427,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 61                          ;
-; cycloneiii_ff         ; 114                         ;
+; cycloneiii_ff         ; 115                         ;
 ;     CLR               ; 16                          ;
 ;     ENA               ; 3                           ;
 ;     ENA CLR           ; 15                          ;
 ;     ENA SCLR          ; 16                          ;
 ;     SCLR              ; 48                          ;
-;     plain             ; 16                          ;
-; cycloneiii_lcell_comb ; 316                         ;
+;     plain             ; 17                          ;
+; cycloneiii_lcell_comb ; 319                         ;
 ;     arith             ; 96                          ;
 ;         2 data inputs ; 71                          ;
 ;         3 data inputs ; 25                          ;
-;     normal            ; 220                         ;
+;     normal            ; 223                         ;
 ;         0 data inputs ; 9                           ;
 ;         1 data inputs ; 8                           ;
 ;         2 data inputs ; 52                          ;
-;         3 data inputs ; 44                          ;
-;         4 data inputs ; 107                         ;
+;         3 data inputs ; 46                          ;
+;         4 data inputs ; 108                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.50                       ;
-; Average LUT depth     ; 5.21                        ;
+; Average LUT depth     ; 5.12                        ;
 +-----------------------+-----------------------------+
 
 
@@ -465,7 +465,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
-    Info: Processing started: Mon Apr 04 23:18:30 2022
+    Info: Processing started: Mon Apr 04 23:29:35 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off EECS3216-Project -c EECS3216-Project
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -482,7 +482,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file tb.sv
 Info (12021): Found 1 design units, including 1 entities, in source file drawlines.sv
     Info (12023): Found entity 1: drawLines File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/drawLines.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file scorer.sv
-    Info (12023): Found entity 1: scorer File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/scorer.sv Line: 1
+    Info (12023): Found entity 1: scorer File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/scorer.sv Line: 31
 Info (12021): Found 1 design units, including 1 entities, in source file timer.sv
     Info (12023): Found entity 1: timer File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/timer.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file random.sv
@@ -511,8 +511,8 @@ Info (12128): Elaborating entity "timer" for hierarchy "timer:Time" File: D:/Win
 Info (12128): Elaborating entity "seg7" for hierarchy "timer:Time|seg7:comb_3" File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/timer.sv Line: 14
 Info (12128): Elaborating entity "ClockDivider" for hierarchy "timer:Time|ClockDivider:comb_5" File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/timer.sv Line: 18
 Info (12128): Elaborating entity "scorer" for hierarchy "scorer:Score" File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/top.sv Line: 13
-Warning (10230): Verilog HDL assignment warning at scorer.sv(21): truncated value with size 32 to match size of target (7) File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/scorer.sv Line: 21
-Info (12128): Elaborating entity "sevenseg" for hierarchy "scorer:Score|sevenseg:A" File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/scorer.sv Line: 8
+Warning (10230): Verilog HDL assignment warning at scorer.sv(53): truncated value with size 32 to match size of target (7) File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/scorer.sv Line: 53
+Info (12128): Elaborating entity "sevenseg" for hierarchy "scorer:Score|sevenseg:A" File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/scorer.sv Line: 40
 Info (12128): Elaborating entity "switch" for hierarchy "switch:Switches" File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/top.sv Line: 15
 Info (12128): Elaborating entity "Show_Colours" for hierarchy "Show_Colours:VGA" File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/top.sv Line: 17
 Warning (10230): Verilog HDL assignment warning at Show_Colours.sv(19): truncated value with size 32 to match size of target (1) File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/Show_Colours.sv Line: 19
@@ -523,10 +523,10 @@ Info (12128): Elaborating entity "verticalCounter" for hierarchy "Show_Colours:V
 Warning (10230): Verilog HDL assignment warning at verticalCounter.sv(8): truncated value with size 32 to match size of target (16) File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/verticalCounter.sv Line: 8
 Info (12128): Elaborating entity "drawLines" for hierarchy "Show_Colours:VGA|drawLines:DL" File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/Show_Colours.sv Line: 21
 Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "scorer:Score|Mod0" File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/scorer.sv Line: 9
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "scorer:Score|Div0" File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/scorer.sv Line: 8
-Info (12130): Elaborated megafunction instantiation "scorer:Score|lpm_divide:Mod0" File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/scorer.sv Line: 9
-Info (12133): Instantiated megafunction "scorer:Score|lpm_divide:Mod0" with the following parameter: File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/scorer.sv Line: 9
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "scorer:Score|Mod0" File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/scorer.sv Line: 41
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "scorer:Score|Div0" File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/scorer.sv Line: 40
+Info (12130): Elaborated megafunction instantiation "scorer:Score|lpm_divide:Mod0" File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/scorer.sv Line: 41
+Info (12133): Instantiated megafunction "scorer:Score|lpm_divide:Mod0" with the following parameter: File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/scorer.sv Line: 41
     Info (12134): Parameter "LPM_WIDTHN" = "7"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -541,8 +541,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/add_
     Info (12023): Found entity 1: add_sub_t3c File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/db/add_sub_t3c.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
     Info (12023): Found entity 1: add_sub_u3c File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/db/add_sub_u3c.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "scorer:Score|lpm_divide:Div0" File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/scorer.sv Line: 8
-Info (12133): Instantiated megafunction "scorer:Score|lpm_divide:Div0" with the following parameter: File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/scorer.sv Line: 8
+Info (12130): Elaborated megafunction instantiation "scorer:Score|lpm_divide:Div0" File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/scorer.sv Line: 40
+Info (12133): Instantiated megafunction "scorer:Score|lpm_divide:Div0" with the following parameter: File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/scorer.sv Line: 40
     Info (12134): Parameter "LPM_WIDTHN" = "7"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -564,13 +564,13 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[5]" File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/top.sv Line: 1
-Info (21057): Implemented 395 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 398 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 334 logic cells
+    Info (21061): Implemented 337 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
     Info: Peak virtual memory: 4828 megabytes
-    Info: Processing ended: Mon Apr 04 23:18:38 2022
+    Info: Processing ended: Mon Apr 04 23:29:43 2022
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:18
 

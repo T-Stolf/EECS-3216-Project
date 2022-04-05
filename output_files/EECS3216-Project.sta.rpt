@@ -1,5 +1,5 @@
 Timing Analyzer report for EECS3216-Project
-Mon Apr 04 23:18:57 2022
+Mon Apr 04 23:30:02 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -94,13 +94,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.29        ;
+; Average used               ; 1.27        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   2.6%      ;
-;     Processors 3-12        ;   2.6%      ;
+;     Processor 3            ;   2.5%      ;
+;     Processors 4-12        ;   2.5%      ;
 +----------------------------+-------------+
 
 
@@ -121,10 +122,10 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+------------------------------------------+------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name                               ; Note                                           ;
 +------------+-----------------+------------------------------------------+------------------------------------------------+
-; 120.77 MHz ; 120.77 MHz      ; KEY[1]                                   ;                                                ;
-; 171.79 MHz ; 171.79 MHz      ; CLOCK_50                                 ;                                                ;
-; 216.22 MHz ; 216.22 MHz      ; Show_Colours:VGA|ClockDivider:MHz25|cout ;                                                ;
-; 472.59 MHz ; 450.05 MHz      ; timer:Time|ClockDivider:comb_5|cout      ; limit due to minimum period restriction (tmin) ;
+; 163.72 MHz ; 163.72 MHz      ; KEY[1]                                   ;                                                ;
+; 172.44 MHz ; 172.44 MHz      ; CLOCK_50                                 ;                                                ;
+; 206.19 MHz ; 206.19 MHz      ; Show_Colours:VGA|ClockDivider:MHz25|cout ;                                                ;
+; 514.4 MHz  ; 450.05 MHz      ; timer:Time|ClockDivider:comb_5|cout      ; limit due to minimum period restriction (tmin) ;
 +------------+-----------------+------------------------------------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -134,10 +135,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------+--------+---------------+
 ; Clock                                    ; Slack  ; End Point TNS ;
 +------------------------------------------+--------+---------------+
-; CLOCK_50                                 ; -4.821 ; -164.024      ;
-; KEY[1]                                   ; -3.640 ; -3.640        ;
-; Show_Colours:VGA|ClockDivider:MHz25|cout ; -3.625 ; -132.274      ;
-; timer:Time|ClockDivider:comb_5|cout      ; -1.116 ; -8.360        ;
+; CLOCK_50                                 ; -4.799 ; -184.091      ;
+; Show_Colours:VGA|ClockDivider:MHz25|cout ; -4.072 ; -135.251      ;
+; KEY[1]                                   ; -3.557 ; -3.557        ;
+; timer:Time|ClockDivider:comb_5|cout      ; -0.944 ; -9.549        ;
 +------------------------------------------+--------+---------------+
 
 
@@ -146,10 +147,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------+-------+---------------+
 ; Clock                                    ; Slack ; End Point TNS ;
 +------------------------------------------+-------+---------------+
-; timer:Time|ClockDivider:comb_5|cout      ; 0.315 ; 0.000         ;
-; CLOCK_50                                 ; 0.331 ; 0.000         ;
-; Show_Colours:VGA|ClockDivider:MHz25|cout ; 0.554 ; 0.000         ;
-; KEY[1]                                   ; 1.039 ; 0.000         ;
+; CLOCK_50                                 ; 0.326 ; 0.000         ;
+; timer:Time|ClockDivider:comb_5|cout      ; 0.330 ; 0.000         ;
+; Show_Colours:VGA|ClockDivider:MHz25|cout ; 0.549 ; 0.000         ;
+; KEY[1]                                   ; 1.052 ; 0.000         ;
 +------------------------------------------+-------+---------------+
 
 
@@ -158,7 +159,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+--------+--------------------+
 ; Clock    ; Slack  ; End Point TNS      ;
 +----------+--------+--------------------+
-; CLOCK_50 ; -2.115 ; -2.115             ;
+; CLOCK_50 ; -2.021 ; -2.021             ;
 +----------+--------+--------------------+
 
 
@@ -167,7 +168,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+-------+--------------------+
 ; Clock    ; Slack ; End Point TNS      ;
 +----------+-------+--------------------+
-; CLOCK_50 ; 1.794 ; 0.000              ;
+; CLOCK_50 ; 1.537 ; 0.000              ;
 +----------+-------+--------------------+
 
 
@@ -176,7 +177,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------+--------+---------------+
 ; Clock                                    ; Slack  ; End Point TNS ;
 +------------------------------------------+--------+---------------+
-; CLOCK_50                                 ; -3.000 ; -73.876       ;
+; CLOCK_50                                 ; -3.000 ; -75.098       ;
 ; KEY[1]                                   ; -3.000 ; -3.000        ;
 ; Show_Colours:VGA|ClockDivider:MHz25|cout ; -1.222 ; -54.990       ;
 ; timer:Time|ClockDivider:comb_5|cout      ; -1.222 ; -13.442       ;
@@ -194,10 +195,10 @@ No synchronizer chains to report.
 +------------+-----------------+------------------------------------------+------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name                               ; Note                                           ;
 +------------+-----------------+------------------------------------------+------------------------------------------------+
-; 131.89 MHz ; 131.89 MHz      ; KEY[1]                                   ;                                                ;
-; 187.58 MHz ; 187.58 MHz      ; CLOCK_50                                 ;                                                ;
-; 236.57 MHz ; 236.57 MHz      ; Show_Colours:VGA|ClockDivider:MHz25|cout ;                                                ;
-; 517.6 MHz  ; 450.05 MHz      ; timer:Time|ClockDivider:comb_5|cout      ; limit due to minimum period restriction (tmin) ;
+; 182.95 MHz ; 182.95 MHz      ; KEY[1]                                   ;                                                ;
+; 190.55 MHz ; 190.55 MHz      ; CLOCK_50                                 ;                                                ;
+; 226.55 MHz ; 226.55 MHz      ; Show_Colours:VGA|ClockDivider:MHz25|cout ;                                                ;
+; 564.02 MHz ; 450.05 MHz      ; timer:Time|ClockDivider:comb_5|cout      ; limit due to minimum period restriction (tmin) ;
 +------------+-----------------+------------------------------------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -207,10 +208,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------+--------+---------------+
 ; Clock                                    ; Slack  ; End Point TNS ;
 +------------------------------------------+--------+---------------+
-; CLOCK_50                                 ; -4.331 ; -145.938      ;
-; KEY[1]                                   ; -3.291 ; -3.291        ;
-; Show_Colours:VGA|ClockDivider:MHz25|cout ; -3.227 ; -117.392      ;
-; timer:Time|ClockDivider:comb_5|cout      ; -0.932 ; -6.651        ;
+; CLOCK_50                                 ; -4.248 ; -163.561      ;
+; Show_Colours:VGA|ClockDivider:MHz25|cout ; -3.631 ; -119.648      ;
+; KEY[1]                                   ; -3.098 ; -3.098        ;
+; timer:Time|ClockDivider:comb_5|cout      ; -0.773 ; -7.793        ;
 +------------------------------------------+--------+---------------+
 
 
@@ -219,10 +220,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------+-------+---------------+
 ; Clock                                    ; Slack ; End Point TNS ;
 +------------------------------------------+-------+---------------+
-; timer:Time|ClockDivider:comb_5|cout      ; 0.286 ; 0.000         ;
-; CLOCK_50                                 ; 0.301 ; 0.000         ;
-; Show_Colours:VGA|ClockDivider:MHz25|cout ; 0.508 ; 0.000         ;
-; KEY[1]                                   ; 0.970 ; 0.000         ;
+; CLOCK_50                                 ; 0.296 ; 0.000         ;
+; timer:Time|ClockDivider:comb_5|cout      ; 0.300 ; 0.000         ;
+; Show_Colours:VGA|ClockDivider:MHz25|cout ; 0.504 ; 0.000         ;
+; KEY[1]                                   ; 0.968 ; 0.000         ;
 +------------------------------------------+-------+---------------+
 
 
@@ -231,7 +232,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+--------+-------------------+
 ; Clock    ; Slack  ; End Point TNS     ;
 +----------+--------+-------------------+
-; CLOCK_50 ; -1.876 ; -1.876            ;
+; CLOCK_50 ; -1.799 ; -1.799            ;
 +----------+--------+-------------------+
 
 
@@ -240,7 +241,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+-------+-------------------+
 ; Clock    ; Slack ; End Point TNS     ;
 +----------+-------+-------------------+
-; CLOCK_50 ; 1.730 ; 0.000             ;
+; CLOCK_50 ; 1.506 ; 0.000             ;
 +----------+-------+-------------------+
 
 
@@ -249,7 +250,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------+--------+---------------+
 ; Clock                                    ; Slack  ; End Point TNS ;
 +------------------------------------------+--------+---------------+
-; CLOCK_50                                 ; -3.000 ; -73.876       ;
+; CLOCK_50                                 ; -3.000 ; -75.098       ;
 ; KEY[1]                                   ; -3.000 ; -3.000        ;
 ; Show_Colours:VGA|ClockDivider:MHz25|cout ; -1.222 ; -54.990       ;
 ; timer:Time|ClockDivider:comb_5|cout      ; -1.222 ; -13.442       ;
@@ -267,10 +268,10 @@ No synchronizer chains to report.
 +------------------------------------------+--------+---------------+
 ; Clock                                    ; Slack  ; End Point TNS ;
 +------------------------------------------+--------+---------------+
-; KEY[1]                                   ; -1.982 ; -1.982        ;
-; CLOCK_50                                 ; -1.794 ; -49.009       ;
-; Show_Colours:VGA|ClockDivider:MHz25|cout ; -1.167 ; -38.267       ;
-; timer:Time|ClockDivider:comb_5|cout      ; -0.001 ; -0.001        ;
+; CLOCK_50                                 ; -1.865 ; -58.530       ;
+; Show_Colours:VGA|ClockDivider:MHz25|cout ; -1.556 ; -41.512       ;
+; KEY[1]                                   ; -1.389 ; -1.389        ;
+; timer:Time|ClockDivider:comb_5|cout      ; 0.083  ; 0.000         ;
 +------------------------------------------+--------+---------------+
 
 
@@ -279,10 +280,10 @@ No synchronizer chains to report.
 +------------------------------------------+-------+---------------+
 ; Clock                                    ; Slack ; End Point TNS ;
 +------------------------------------------+-------+---------------+
-; timer:Time|ClockDivider:comb_5|cout      ; 0.145 ; 0.000         ;
-; CLOCK_50                                 ; 0.153 ; 0.000         ;
-; Show_Colours:VGA|ClockDivider:MHz25|cout ; 0.250 ; 0.000         ;
-; KEY[1]                                   ; 0.475 ; 0.000         ;
+; CLOCK_50                                 ; 0.149 ; 0.000         ;
+; timer:Time|ClockDivider:comb_5|cout      ; 0.151 ; 0.000         ;
+; Show_Colours:VGA|ClockDivider:MHz25|cout ; 0.247 ; 0.000         ;
+; KEY[1]                                   ; 0.479 ; 0.000         ;
 +------------------------------------------+-------+---------------+
 
 
@@ -291,7 +292,7 @@ No synchronizer chains to report.
 +----------+--------+-------------------+
 ; Clock    ; Slack  ; End Point TNS     ;
 +----------+--------+-------------------+
-; CLOCK_50 ; -1.195 ; -1.195            ;
+; CLOCK_50 ; -1.150 ; -1.150            ;
 +----------+--------+-------------------+
 
 
@@ -300,7 +301,7 @@ No synchronizer chains to report.
 +----------+-------+-------------------+
 ; Clock    ; Slack ; End Point TNS     ;
 +----------+-------+-------------------+
-; CLOCK_50 ; 0.707 ; 0.000             ;
+; CLOCK_50 ; 0.619 ; 0.000             ;
 +----------+-------+-------------------+
 
 
@@ -309,8 +310,8 @@ No synchronizer chains to report.
 +------------------------------------------+--------+---------------+
 ; Clock                                    ; Slack  ; End Point TNS ;
 +------------------------------------------+--------+---------------+
-; CLOCK_50                                 ; -3.000 ; -70.886       ;
-; KEY[1]                                   ; -3.000 ; -3.088        ;
+; CLOCK_50                                 ; -3.000 ; -72.044       ;
+; KEY[1]                                   ; -3.000 ; -3.072        ;
 ; Show_Colours:VGA|ClockDivider:MHz25|cout ; -1.000 ; -45.000       ;
 ; timer:Time|ClockDivider:comb_5|cout      ; -1.000 ; -11.000       ;
 +------------------------------------------+--------+---------------+
@@ -327,16 +328,16 @@ No synchronizer chains to report.
 +-------------------------------------------+----------+-------+----------+---------+---------------------+
 ; Clock                                     ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +-------------------------------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack                          ; -4.821   ; 0.145 ; -2.115   ; 0.707   ; -3.000              ;
-;  CLOCK_50                                 ; -4.821   ; 0.153 ; -2.115   ; 0.707   ; -3.000              ;
-;  KEY[1]                                   ; -3.640   ; 0.475 ; N/A      ; N/A     ; -3.000              ;
-;  Show_Colours:VGA|ClockDivider:MHz25|cout ; -3.625   ; 0.250 ; N/A      ; N/A     ; -1.222              ;
-;  timer:Time|ClockDivider:comb_5|cout      ; -1.116   ; 0.145 ; N/A      ; N/A     ; -1.222              ;
-; Design-wide TNS                           ; -308.298 ; 0.0   ; -2.115   ; 0.0     ; -145.308            ;
-;  CLOCK_50                                 ; -164.024 ; 0.000 ; -2.115   ; 0.000   ; -73.876             ;
-;  KEY[1]                                   ; -3.640   ; 0.000 ; N/A      ; N/A     ; -3.088              ;
-;  Show_Colours:VGA|ClockDivider:MHz25|cout ; -132.274 ; 0.000 ; N/A      ; N/A     ; -54.990             ;
-;  timer:Time|ClockDivider:comb_5|cout      ; -8.360   ; 0.000 ; N/A      ; N/A     ; -13.442             ;
+; Worst-case Slack                          ; -4.799   ; 0.149 ; -2.021   ; 0.619   ; -3.000              ;
+;  CLOCK_50                                 ; -4.799   ; 0.149 ; -2.021   ; 0.619   ; -3.000              ;
+;  KEY[1]                                   ; -3.557   ; 0.479 ; N/A      ; N/A     ; -3.000              ;
+;  Show_Colours:VGA|ClockDivider:MHz25|cout ; -4.072   ; 0.247 ; N/A      ; N/A     ; -1.222              ;
+;  timer:Time|ClockDivider:comb_5|cout      ; -0.944   ; 0.151 ; N/A      ; N/A     ; -1.222              ;
+; Design-wide TNS                           ; -332.448 ; 0.0   ; -2.021   ; 0.0     ; -146.53             ;
+;  CLOCK_50                                 ; -184.091 ; 0.000 ; -2.021   ; 0.000   ; -75.098             ;
+;  KEY[1]                                   ; -3.557   ; 0.000 ; N/A      ; N/A     ; -3.072              ;
+;  Show_Colours:VGA|ClockDivider:MHz25|cout ; -135.251 ; 0.000 ; N/A      ; N/A     ; -54.990             ;
+;  timer:Time|ClockDivider:comb_5|cout      ; -9.549   ; 0.000 ; N/A      ; N/A     ; -13.442             ;
 +-------------------------------------------+----------+-------+----------+---------+---------------------+
 
 
@@ -613,15 +614,15 @@ No synchronizer chains to report.
 +------------------------------------------+------------------------------------------+----------+----------+----------+----------+
 ; From Clock                               ; To Clock                                 ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------------------------------------+------------------------------------------+----------+----------+----------+----------+
-; CLOCK_50                                 ; CLOCK_50                                 ; 1857     ; 0        ; 0        ; 0        ;
-; KEY[1]                                   ; CLOCK_50                                 ; 21       ; 10       ; 0        ; 0        ;
+; CLOCK_50                                 ; CLOCK_50                                 ; 1880     ; 0        ; 0        ; 0        ;
+; KEY[1]                                   ; CLOCK_50                                 ; 23       ; 11       ; 0        ; 0        ;
 ; Show_Colours:VGA|ClockDivider:MHz25|cout ; CLOCK_50                                 ; 1        ; 1        ; 0        ; 0        ;
-; timer:Time|ClockDivider:comb_5|cout      ; CLOCK_50                                 ; 18       ; 1        ; 0        ; 0        ;
+; timer:Time|ClockDivider:comb_5|cout      ; CLOCK_50                                 ; 20       ; 1        ; 0        ; 0        ;
 ; CLOCK_50                                 ; KEY[1]                                   ; 15       ; 0        ; 0        ; 0        ;
 ; KEY[1]                                   ; KEY[1]                                   ; 2        ; 1        ; 0        ; 0        ;
 ; timer:Time|ClockDivider:comb_5|cout      ; KEY[1]                                   ; 1        ; 0        ; 0        ; 0        ;
-; CLOCK_50                                 ; Show_Colours:VGA|ClockDivider:MHz25|cout ; 64       ; 0        ; 0        ; 0        ;
-; Show_Colours:VGA|ClockDivider:MHz25|cout ; Show_Colours:VGA|ClockDivider:MHz25|cout ; 4380     ; 0        ; 0        ; 0        ;
+; CLOCK_50                                 ; Show_Colours:VGA|ClockDivider:MHz25|cout ; 56       ; 0        ; 0        ; 0        ;
+; Show_Colours:VGA|ClockDivider:MHz25|cout ; Show_Colours:VGA|ClockDivider:MHz25|cout ; 3968     ; 0        ; 0        ; 0        ;
 ; timer:Time|ClockDivider:comb_5|cout      ; Show_Colours:VGA|ClockDivider:MHz25|cout ; 12       ; 0        ; 0        ; 0        ;
 ; timer:Time|ClockDivider:comb_5|cout      ; timer:Time|ClockDivider:comb_5|cout      ; 114      ; 0        ; 0        ; 0        ;
 +------------------------------------------+------------------------------------------+----------+----------+----------+----------+
@@ -633,15 +634,15 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------------------------------------+------------------------------------------+----------+----------+----------+----------+
 ; From Clock                               ; To Clock                                 ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------------------------------------+------------------------------------------+----------+----------+----------+----------+
-; CLOCK_50                                 ; CLOCK_50                                 ; 1857     ; 0        ; 0        ; 0        ;
-; KEY[1]                                   ; CLOCK_50                                 ; 21       ; 10       ; 0        ; 0        ;
+; CLOCK_50                                 ; CLOCK_50                                 ; 1880     ; 0        ; 0        ; 0        ;
+; KEY[1]                                   ; CLOCK_50                                 ; 23       ; 11       ; 0        ; 0        ;
 ; Show_Colours:VGA|ClockDivider:MHz25|cout ; CLOCK_50                                 ; 1        ; 1        ; 0        ; 0        ;
-; timer:Time|ClockDivider:comb_5|cout      ; CLOCK_50                                 ; 18       ; 1        ; 0        ; 0        ;
+; timer:Time|ClockDivider:comb_5|cout      ; CLOCK_50                                 ; 20       ; 1        ; 0        ; 0        ;
 ; CLOCK_50                                 ; KEY[1]                                   ; 15       ; 0        ; 0        ; 0        ;
 ; KEY[1]                                   ; KEY[1]                                   ; 2        ; 1        ; 0        ; 0        ;
 ; timer:Time|ClockDivider:comb_5|cout      ; KEY[1]                                   ; 1        ; 0        ; 0        ; 0        ;
-; CLOCK_50                                 ; Show_Colours:VGA|ClockDivider:MHz25|cout ; 64       ; 0        ; 0        ; 0        ;
-; Show_Colours:VGA|ClockDivider:MHz25|cout ; Show_Colours:VGA|ClockDivider:MHz25|cout ; 4380     ; 0        ; 0        ; 0        ;
+; CLOCK_50                                 ; Show_Colours:VGA|ClockDivider:MHz25|cout ; 56       ; 0        ; 0        ; 0        ;
+; Show_Colours:VGA|ClockDivider:MHz25|cout ; Show_Colours:VGA|ClockDivider:MHz25|cout ; 3968     ; 0        ; 0        ; 0        ;
 ; timer:Time|ClockDivider:comb_5|cout      ; Show_Colours:VGA|ClockDivider:MHz25|cout ; 12       ; 0        ; 0        ; 0        ;
 ; timer:Time|ClockDivider:comb_5|cout      ; timer:Time|ClockDivider:comb_5|cout      ; 114      ; 0        ; 0        ; 0        ;
 +------------------------------------------+------------------------------------------+----------+----------+----------+----------+
@@ -688,7 +689,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 7     ; 7    ;
-; Unconstrained Input Port Paths  ; 100   ; 100  ;
+; Unconstrained Input Port Paths  ; 106   ; 106  ;
 ; Unconstrained Output Ports      ; 48    ; 48   ;
 ; Unconstrained Output Port Paths ; 216   ; 216  ;
 +---------------------------------+-------+------+
@@ -854,7 +855,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
-    Info: Processing started: Mon Apr 04 23:18:55 2022
+    Info: Processing started: Mon Apr 04 23:30:00 2022
 Info: Command: quartus_sta EECS3216-Project -c EECS3216-Project
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -871,44 +872,44 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name KEY[1] KEY[1]
 Warning (332125): Found combinational loop of 7 nodes File: D:/Winter 2022/EECS3216 Z - Digital Systems Engineering/Project/EECS-3216-Project/switch.sv Line: 5
     Warning (332126): Node "Switches|correct_signal~2|combout"
+    Warning (332126): Node "Switches|correct_signal~11|datab"
+    Warning (332126): Node "Switches|correct_signal~11|combout"
+    Warning (332126): Node "Switches|correct_signal~2|datab"
     Warning (332126): Node "Switches|correct_signal~10|datab"
     Warning (332126): Node "Switches|correct_signal~10|combout"
-    Warning (332126): Node "Switches|correct_signal~11|dataa"
-    Warning (332126): Node "Switches|correct_signal~11|combout"
-    Warning (332126): Node "Switches|correct_signal~2|dataa"
-    Warning (332126): Node "Switches|correct_signal~11|datab"
+    Warning (332126): Node "Switches|correct_signal~11|datac"
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -4.821
+Info (332146): Worst-case setup slack is -4.799
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.821            -164.024 CLOCK_50 
-    Info (332119):    -3.640              -3.640 KEY[1] 
-    Info (332119):    -3.625            -132.274 Show_Colours:VGA|ClockDivider:MHz25|cout 
-    Info (332119):    -1.116              -8.360 timer:Time|ClockDivider:comb_5|cout 
-Info (332146): Worst-case hold slack is 0.315
+    Info (332119):    -4.799            -184.091 CLOCK_50 
+    Info (332119):    -4.072            -135.251 Show_Colours:VGA|ClockDivider:MHz25|cout 
+    Info (332119):    -3.557              -3.557 KEY[1] 
+    Info (332119):    -0.944              -9.549 timer:Time|ClockDivider:comb_5|cout 
+Info (332146): Worst-case hold slack is 0.326
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.315               0.000 timer:Time|ClockDivider:comb_5|cout 
-    Info (332119):     0.331               0.000 CLOCK_50 
-    Info (332119):     0.554               0.000 Show_Colours:VGA|ClockDivider:MHz25|cout 
-    Info (332119):     1.039               0.000 KEY[1] 
-Info (332146): Worst-case recovery slack is -2.115
+    Info (332119):     0.326               0.000 CLOCK_50 
+    Info (332119):     0.330               0.000 timer:Time|ClockDivider:comb_5|cout 
+    Info (332119):     0.549               0.000 Show_Colours:VGA|ClockDivider:MHz25|cout 
+    Info (332119):     1.052               0.000 KEY[1] 
+Info (332146): Worst-case recovery slack is -2.021
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.115              -2.115 CLOCK_50 
-Info (332146): Worst-case removal slack is 1.794
+    Info (332119):    -2.021              -2.021 CLOCK_50 
+Info (332146): Worst-case removal slack is 1.537
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.794               0.000 CLOCK_50 
+    Info (332119):     1.537               0.000 CLOCK_50 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -73.876 CLOCK_50 
+    Info (332119):    -3.000             -75.098 CLOCK_50 
     Info (332119):    -3.000              -3.000 KEY[1] 
     Info (332119):    -1.222             -54.990 Show_Colours:VGA|ClockDivider:MHz25|cout 
     Info (332119):    -1.222             -13.442 timer:Time|ClockDivider:comb_5|cout 
@@ -918,72 +919,72 @@ Warning (334000): Timing characteristics of device 10M50DAF484C6GES are prelimin
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -4.331
+Info (332146): Worst-case setup slack is -4.248
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.331            -145.938 CLOCK_50 
-    Info (332119):    -3.291              -3.291 KEY[1] 
-    Info (332119):    -3.227            -117.392 Show_Colours:VGA|ClockDivider:MHz25|cout 
-    Info (332119):    -0.932              -6.651 timer:Time|ClockDivider:comb_5|cout 
-Info (332146): Worst-case hold slack is 0.286
+    Info (332119):    -4.248            -163.561 CLOCK_50 
+    Info (332119):    -3.631            -119.648 Show_Colours:VGA|ClockDivider:MHz25|cout 
+    Info (332119):    -3.098              -3.098 KEY[1] 
+    Info (332119):    -0.773              -7.793 timer:Time|ClockDivider:comb_5|cout 
+Info (332146): Worst-case hold slack is 0.296
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.286               0.000 timer:Time|ClockDivider:comb_5|cout 
-    Info (332119):     0.301               0.000 CLOCK_50 
-    Info (332119):     0.508               0.000 Show_Colours:VGA|ClockDivider:MHz25|cout 
-    Info (332119):     0.970               0.000 KEY[1] 
-Info (332146): Worst-case recovery slack is -1.876
+    Info (332119):     0.296               0.000 CLOCK_50 
+    Info (332119):     0.300               0.000 timer:Time|ClockDivider:comb_5|cout 
+    Info (332119):     0.504               0.000 Show_Colours:VGA|ClockDivider:MHz25|cout 
+    Info (332119):     0.968               0.000 KEY[1] 
+Info (332146): Worst-case recovery slack is -1.799
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.876              -1.876 CLOCK_50 
-Info (332146): Worst-case removal slack is 1.730
+    Info (332119):    -1.799              -1.799 CLOCK_50 
+Info (332146): Worst-case removal slack is 1.506
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.730               0.000 CLOCK_50 
+    Info (332119):     1.506               0.000 CLOCK_50 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -73.876 CLOCK_50 
+    Info (332119):    -3.000             -75.098 CLOCK_50 
     Info (332119):    -3.000              -3.000 KEY[1] 
     Info (332119):    -1.222             -54.990 Show_Colours:VGA|ClockDivider:MHz25|cout 
     Info (332119):    -1.222             -13.442 timer:Time|ClockDivider:comb_5|cout 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -1.982
+Info (332146): Worst-case setup slack is -1.865
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.982              -1.982 KEY[1] 
-    Info (332119):    -1.794             -49.009 CLOCK_50 
-    Info (332119):    -1.167             -38.267 Show_Colours:VGA|ClockDivider:MHz25|cout 
-    Info (332119):    -0.001              -0.001 timer:Time|ClockDivider:comb_5|cout 
-Info (332146): Worst-case hold slack is 0.145
+    Info (332119):    -1.865             -58.530 CLOCK_50 
+    Info (332119):    -1.556             -41.512 Show_Colours:VGA|ClockDivider:MHz25|cout 
+    Info (332119):    -1.389              -1.389 KEY[1] 
+    Info (332119):     0.083               0.000 timer:Time|ClockDivider:comb_5|cout 
+Info (332146): Worst-case hold slack is 0.149
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.145               0.000 timer:Time|ClockDivider:comb_5|cout 
-    Info (332119):     0.153               0.000 CLOCK_50 
-    Info (332119):     0.250               0.000 Show_Colours:VGA|ClockDivider:MHz25|cout 
-    Info (332119):     0.475               0.000 KEY[1] 
-Info (332146): Worst-case recovery slack is -1.195
+    Info (332119):     0.149               0.000 CLOCK_50 
+    Info (332119):     0.151               0.000 timer:Time|ClockDivider:comb_5|cout 
+    Info (332119):     0.247               0.000 Show_Colours:VGA|ClockDivider:MHz25|cout 
+    Info (332119):     0.479               0.000 KEY[1] 
+Info (332146): Worst-case recovery slack is -1.150
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.195              -1.195 CLOCK_50 
-Info (332146): Worst-case removal slack is 0.707
+    Info (332119):    -1.150              -1.150 CLOCK_50 
+Info (332146): Worst-case removal slack is 0.619
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.707               0.000 CLOCK_50 
+    Info (332119):     0.619               0.000 CLOCK_50 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -70.886 CLOCK_50 
-    Info (332119):    -3.000              -3.088 KEY[1] 
+    Info (332119):    -3.000             -72.044 CLOCK_50 
+    Info (332119):    -3.000              -3.072 KEY[1] 
     Info (332119):    -1.000             -45.000 Show_Colours:VGA|ClockDivider:MHz25|cout 
     Info (332119):    -1.000             -11.000 timer:Time|ClockDivider:comb_5|cout 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4927 megabytes
-    Info: Processing ended: Mon Apr 04 23:18:57 2022
+    Info: Peak virtual memory: 4919 megabytes
+    Info: Processing ended: Mon Apr 04 23:30:02 2022
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:03
 
