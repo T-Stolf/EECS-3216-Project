@@ -18,7 +18,5 @@ Show_Colours VGA(displayColours, CLOCK_50, gameOverSignal, VGA_HS, VGA_VS, VGA_R
 
  
 assign LEDR[0:4] = SW[0:4];
-//assign LEDR[8:9] = KEY[0:1];
-assign LEDR[6] = correctAnswerSignal;
  
 endmodule

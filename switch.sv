@@ -42,8 +42,7 @@ output logic correct_signal = 0;
 												correct_signal <= 1;
 									else
 												correct_signal<= 0;
-						end
-								
+						end		
 				end
 				
 			else 

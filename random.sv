@@ -116,7 +116,7 @@ begin
 		matrix[1] <= 3'b001;
 		matrix[2] <= 3'b010;
 		matrix[3] <= 3'b100;
-		missing   <= 3'b001;
+		missing   <= 3'b011;
 		led0 	  <= 1'd0;
 		led1 	  <= 1'd0;
 		led2 	  <= 1'd0;
