@@ -1,4 +1,4 @@
-module drawLines(input[0:3][0:2] colourRegion, input refreshclk, areaValid, input[15:0] horizontal, vertical, output logic [0:3] R, G, B);
+module drawLines(input GameOver, input[2:0] colourRegion[0:3], input refreshclk, areaValid, input[15:0] horizontal, vertical, output logic [0:3] R, G, B);
 
 logic[11:0] white = 12'hFFF, black = 12'h0, blue = 12'h00F, red = 12'hF00, green = 12'h0F0, yellow = 12'hFF0, purple = 12'hF0F;
 
@@ -8,24 +8,10 @@ parameter[15:0] vertMin = 35, vertMax = 514, horzMin = 143, horzMax = 783, rows 
 
 always_ff@(posedge refreshclk)
 begin
-	if(areaValid)
+	if(areaValid && !GameOver)
 	begin
 		if((vertical > 34 && vertical < 273) && (horizontal > 143 && horizontal < 463))
 			case(colourRegion[0])
-//				4'b0000: {R, G, B} <= red;
-//				4'b0001: {R, G, B} <= red;
-//				
-//				4'b0010: {R, G, B} <= green;
-//				4'b0011: {R, G, B} <= green;
-//				
-//				4'b0100: {R, G, B} <= blue;
-//				4'b0101: {R, G, B} <= blue;
-//				
-//				4'b0110: {R, G, B} <= purple;
-//				4'b0111: {R, G, B} <= purple;
-//				
-//				4'b1000: {R, G, B} <= yellow;
-//				4'b1001: {R, G, B} <= yellow;
 				
 				3'b000: {R, G, B} <= red;
 				3'b001: {R, G, B} <= green;

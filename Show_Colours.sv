@@ -1,4 +1,4 @@
-module Show_Colours(input[0:3][0:2] colourLocation, input CLOCK_50,output VGA_HS, VGA_VS, output[0:3] VGA_R, VGA_G, VGA_B);
+module Show_Colours(input[2:0] colourLocation [0:3], input CLOCK_50, GameOver, output VGA_HS, VGA_VS, output[0:3] VGA_R, VGA_G, VGA_B);
 
 
 wire clk25MHz, enableVertCount, validArea ;
@@ -18,6 +18,6 @@ assign VGA_VS = (verticalCount < 2) ? 1'b1:1'b0;
 //maximum assignable area
 assign validArea = (horizontalCount < 784 && horizontalCount > 143 && verticalCount < 515 && verticalCount > 34) ? 1:0;
 
-drawLines DL( colourLocation, clk25MHz, validArea, horizontalCount, verticalCount, VGA_R, VGA_G, VGA_B);
+drawLines DL(GameOver, colourLocation, clk25MHz, validArea, horizontalCount, verticalCount, VGA_R, VGA_G, VGA_B);
 
 endmodule
