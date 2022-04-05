@@ -48,7 +48,5 @@ output logic correct_signal = 0;
 			else 
 				correct_signal<= 0;
 		end
-		
-
 endmodule
 
